@@ -31,4 +31,14 @@ Delete a couple old kernels that aren't being used: `rm -f *5.4.0-137*`
 
 Fix dependency errors: `apt isntall -f`
 
+Update apt to prep remove `apt update`
+
+Finish removing the kernels manually deleted `apt autoremove`
+
+Install new kernels `apt upgrade`
+
+The stack overflow post suggests running `sudo apt autoremove` to prevent this issue from occuring again, but I'm on a hunt for a better solution.
+
+
+
 Then continue to purge old files and update as normal
