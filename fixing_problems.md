@@ -2,8 +2,11 @@
 
 ## Kernels taking up too much space
 Inspired heavily by this stack overflow post: https://askubuntu.com/a/1038748
+
 Finding which kernels are installed: `dpkg --list | grep linux-image`
+
 Finding which kernel is currently being used: `uname -a`
+
 Removing an old kernel: `sudo apt purge linux-image-5.4.0-136-generic`
 
 If the disk is full, I fot an error message like:
