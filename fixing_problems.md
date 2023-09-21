@@ -19,8 +19,13 @@ E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or speci
 ```
 In this case, there is insufficient space in the boot partition to remove a kernel (ironic).
 To remove space, we want to manually remove kernel files.
+
 Switch to root: `sudo su`
+
 Navigate to /boot: `cd /boot/`
+
 Delete a couple old kernels that aren't being used: `rm -f *5.4.0-137*`
+
 Fix dependency errors: `apt isntall -f`
+
 Then continue to purge old files and update as normal
